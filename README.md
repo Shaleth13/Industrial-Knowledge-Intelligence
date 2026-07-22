@@ -1,4 +1,4 @@
-# ⚙️ Industrial Knowledge Intelligence
+# ⚙️ Industrial Asset Health Monitoring & Predictive Maintenance
 
 An Industrial Predictive Maintenance System developed using the **NASA C-MAPSS Turbofan Engine Dataset**. The application estimates the **Remaining Useful Life (RUL)** of engines and provides maintenance recommendations based on their health status.
 
