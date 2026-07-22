@@ -43,7 +43,7 @@ class CMAPSSData:
         train, test = self.scale(train, test)
         return train, test, rul
 
-//USAGE
+#USAGE
 
 from src.dataset import CMAPSSData
 from pathlib import Path
