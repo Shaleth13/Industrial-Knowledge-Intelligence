@@ -165,7 +165,7 @@ Example:
 
 ## Author
 
-**Shaleth Ghosh**
+**Shaleth Ghosh** & 
 **Yahaswini Singh**
 
 Engineering Physics  
