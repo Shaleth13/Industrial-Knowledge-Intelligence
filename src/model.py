@@ -36,15 +36,17 @@ class RULModel:
         print("Model saved.")
 
 //USAGE
-from dataset import CMAPSSData
-from model import RULModel
+if __name__ == "__main__":
+    from dataset import CMAPSSData
+    from pathlib import Path
 
-data = CMAPSSData(
-    "data/train_FD001.txt",
-    "data/test_FD001.txt",
-    "data/RUL_FD001.txt")
+    BASE_DIR = Path(__file__).resolve().parent.parent
+    data = CMAPSSData(
+        BASE_DIR / "data" / "train_FD001.txt",
+        BASE_DIR / "data" / "test_FD001.txt",
+        BASE_DIR / "data" / "RUL_FD001.txt")
 
-train, test, rul = data.load()
-model = RULModel()
-model.train(train)
-model.save()
+    train, test, rul = data.load()
+    model = RULModel()
+    model.train(train)
+    model.save(BASE_DIR / "models" / "xgboost_model.pkl")
