@@ -43,7 +43,7 @@ class MaintenanceAdvisor:
         predictions = self.recommendation(predictions)
         return predictions
 
-//USAGE
+#USAGE
 from maintenance import MaintenanceAdvisor
 
 advisor = MaintenanceAdvisor()
