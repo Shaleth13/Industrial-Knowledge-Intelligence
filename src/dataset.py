@@ -46,12 +46,14 @@ class CMAPSSData:
 //USAGE
 
 from src.dataset import CMAPSSData
+from pathlib import Path
+
+BASE_DIR = Path(__file__).resolve().parent.parent
 
 data = CMAPSSData(
-    "data/train_FD001.txt",
-    "data/test_FD001.txt",
-    "data/RUL_FD001.txt"
-)
+    BASE_DIR / "data" / "train_FD001.txt",
+    BASE_DIR / "data" / "test_FD001.txt",
+    BASE_DIR / "data" / "RUL_FD001.txt")
 
 train_df, test_df, rul_df = data.load()
 print(train_df.head())
