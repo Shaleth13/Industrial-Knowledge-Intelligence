@@ -143,13 +143,16 @@ The dashboard provides:
 - Engine Status
 - Maintenance Recommendation
 
-Example:
+Website
+## 📸 Application Screenshots
 
-| Engine | Predicted RUL | Health Score | Status | Recommendation |
-|--------|---------------|--------------|---------|----------------|
-| 1 | 102 | 91% | Healthy | No maintenance required |
-| 2 | 48 | 55% | Warning | Schedule inspection |
-| 3 | 15 | 18% | Critical | Immediate maintenance required |
+### Home Page
+
+<img src="images/home.png" width="900">
+
+### Prediction Results
+
+<img src="images/predictions.png" width="900">
 
 ---
 
