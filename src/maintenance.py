@@ -12,17 +12,16 @@ class MaintenanceAdvisor:
         return predictions
 
     def health_status(self, predictions):
-        conditions = [
-            predictions["Health_Score"] >= 70,
-            predictions["Health_Score"].between(40, 70),
-            predictions["Health_Score"] < 40]
-
-        status = [
-            "Healthy",
-            "Warning",
-            "Critical"]
-
-        predictions["Status"] = pd.Series(pd.Categorical(pd.cut(predictions["Health_Score"], bins=[-1,40,70,100], labels=["Critical","Warning","Healthy"]))).astype(str)
+        status = []
+        for score in predictions["Health_Score"]:
+            if score >= 70:
+                status.append("Healthy")
+            elif score >= 40:
+                status.append("Warning")
+            else:
+                status.append("Critical")
+    
+        predictions["Status"] = status
         return predictions
 
     def recommendation(self, predictions):
