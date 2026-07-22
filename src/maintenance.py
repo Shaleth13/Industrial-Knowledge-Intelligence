@@ -43,9 +43,3 @@ class MaintenanceAdvisor:
         predictions = self.recommendation(predictions)
         return predictions
 
-#USAGE
-from maintenance import MaintenanceAdvisor
-
-advisor = MaintenanceAdvisor()
-final_result = advisor.analyze(latest)
-print(final_result.head())
