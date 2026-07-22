@@ -166,7 +166,7 @@ Example:
 ## Author
 
 **Shaleth Ghosh** & 
-**Yahaswini Singh**
+**Yashaswini Singh**
 
 Engineering Physics  
 Indian Institute of Technology (BHU), Varanasi
