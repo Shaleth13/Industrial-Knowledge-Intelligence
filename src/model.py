@@ -35,7 +35,7 @@ class RULModel:
         joblib.dump(self.model, path)
         print("Model saved.")
 
-//USAGE
+#USAGE
 if __name__ == "__main__":
     from dataset import CMAPSSData
     from pathlib import Path
