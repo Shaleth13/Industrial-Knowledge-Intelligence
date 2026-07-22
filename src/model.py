@@ -37,7 +37,7 @@ class RULModel:
 
 #USAGE
 if __name__ == "__main__":
-    from dataset import CMAPSSData
+    from src.dataset import CMAPSSData
     from pathlib import Path
 
     BASE_DIR = Path(__file__).resolve().parent.parent
